@@ -1,6 +1,6 @@
 // returns the correct output
-test
+erte
 
 /* expected */
-test
+erte
 /**/

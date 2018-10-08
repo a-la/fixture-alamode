@@ -1,25 +1,33 @@
 ## API
 
-The package is available by importing its default function:
+The package is available by importing its default and named functions:
 
 ```js
-import fixtureAlamode from '@a-la/fixture-alamode'
+import erte, { c, b } from '@a-la/fixture-alamode'
 ```
 
 %~%
 
-```## fixtureAlamode
-[
-  ["arg1", "string"],
-  ["arg2?", "boolean"]
-]
+```## erte
 ```
 
-Call this function to get the result you want.
-
-%TYPEDEF types/index.xml%
+Returns `erte`.
 
 %EXAMPLE: example/example.js, ../src => @a-la/fixture-alamode%
 %FORK example example/example%
+
+%~%
+
+```## c
+```
+
+Returns `c`.
+
+%~%
+
+```## b
+```
+
+Returns `b`.
 
 %~%
