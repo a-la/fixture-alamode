@@ -1,6 +1,6 @@
 {
   "name": "@a-la/fixture-alamode",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Source code compiled with alamode.",
   "main": "build",
   "scripts": {
