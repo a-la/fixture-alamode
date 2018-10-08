@@ -1,30 +1,26 @@
-const { debuglog } = require('util');
-
-const LOG = debuglog('@a-la/fixture-alamode')
-
 /**
- * Source code compiled with alamode.
- * @param {Config} [config] Options for the program.
- * @param {boolean} [config.shouldRun=true] A boolean option. Default `true`.
- * @param {string} config.text A text to return.
+ * A function that returns `erte`.
  */
-               async function fixtureAlamode(config = {}) {
-  const {
-    shouldRun = true,
-    text,
-  } = config
-  if (!shouldRun) return
-  LOG('@a-la/fixture-alamode called with %s', text)
-  return text
+const erte = () => {
+  return 'erte'
 }
 
-/* documentary types/index.xml */
 /**
- * @typedef {Object} Config Options for the program.
- * @prop {boolean} [shouldRun=true] A boolean option. Default `true`.
- * @prop {string} text A text to return.
+ * A function that returns `c`.
  */
+       const c = () => {
+  return 'c'
+}
 
+/**
+ * A function that returns `b`.
+ */
+       const b = () => {
+  return 'b'
+}
 
-module.exports = fixtureAlamode
+module.exports=erte
+
+module.exports.c = c
+module.exports.b = b
 //# sourceMappingURL=index.js.map
