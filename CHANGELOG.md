@@ -1,5 +1,9 @@
 ## 16 May 2019
 
+### [1.1.2](https://github.com/a-la/fixture-alamode/compare/v1.1.1...v1.1.2)
+
+- [fix] Fix the class `path` import.
+
 ### [1.1.1](https://github.com/a-la/fixture-alamode/compare/v1.1.0...v1.1.1)
 
 - [fix] Correct parenthesis.

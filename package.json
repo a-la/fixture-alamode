@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/a-la/fixture-alamode#readme",
   "devDependencies": {
-    "alamode": "2.2.0",
+    "alamode": "2.3.1",
     "documentary": "1.27.3",
     "eslint-config-artdeco": "1.0.1",
     "yarn-s": "1.1.0",

@@ -1,5 +1,5 @@
 const Stream = require('stream');
-const { join } = require('stream');
+const { join } = require('path');
 
 class S extends Stream {
   /**
