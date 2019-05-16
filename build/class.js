@@ -1,8 +1,15 @@
-/**
- * A function that returns `erte`.
- */
-const erte = () => {
-  return 'erte'
+const Stream = require('stream');
+const { join } = require('stream');
+
+class S extends Stream {
+  /**
+   * Creates a new instance.
+   * @param {string} path
+   */
+  constructor(path) {
+    super()
+    console.log(join('hello', path))
+  }
 }
 
 /**
@@ -21,7 +28,6 @@ const b = (times = 0) => {
   return 'b' + times ? `-${times}` : ''
 }
 
-module.exports=erte
-
+module.exports = S
 module.exports.c = c
 module.exports.b = b

@@ -1,15 +1,14 @@
-import { makeTestSuite } from 'zoroaster'
+import makeTestSuite from '@zoroaster/mask'
 import Context from '../context'
 import fixtureAlamode from '../../src'
 
-const ts = makeTestSuite('test/result', {
-  async getResults(input) {
+// export default
+makeTestSuite('test/result', {
+  async getResults() {
     const res = await fixtureAlamode({
-      text: input,
+      text: this.input,
     })
     return res
   },
   context: Context,
 })
-
-export default ts

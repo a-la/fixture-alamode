@@ -12,12 +12,13 @@ yarn add -E @a-la/fixture-alamode
 
 - [Table Of Contents](#table-of-contents)
 - [API](#api)
-- [`erte()`](#erte-void)
-- [`c()`](#c-void)
-- [`b()`](#b-void)
+- [`erte(): string`](#erte-string)
+- [`c(): string`](#c-string)
+- [`b(): string`](#b-string)
+- [Transpiled Source Code](#transpiled-source-code)
 - [Copyright](#copyright)
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/0.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src="/.documentary/section-breaks/0.svg?sanitize=true"></a></p>
 
 ## API
 
@@ -27,9 +28,9 @@ The package is available by importing its default and named functions:
 import erte, { c, b } from '@a-la/fixture-alamode'
 ```
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src="/.documentary/section-breaks/1.svg?sanitize=true"></a></p>
 
-## `erte(): void`
+## `erte(): string`
 
 Returns `erte`.
 
@@ -48,24 +49,80 @@ import fixtureAlamode from '@a-la/fixture-alamode'
 erte
 ```
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src="/.documentary/section-breaks/2.svg?sanitize=true"></a></p>
 
-## `c(): void`
+## `c(): string`
 
 Returns `c`.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src="/.documentary/section-breaks/3.svg?sanitize=true"></a></p>
 
-## `b(): void`
+## `b(): string`
 
 Returns `b`.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src="/.documentary/section-breaks/4.svg?sanitize=true"></a></p>
+
+## Transpiled Source Code
+
+This is how ÀLaMode transpiles the [source code](src/class.js):
+
+```js
+const Stream = require('stream');
+const { join } = require('stream');
+
+class S extends Stream {
+  /**
+   * Creates a new instance.
+   * @param {string} path
+   */
+  constructor(path) {
+    super()
+    console.log(join('hello', path))
+  }
+}
+
+/**
+ * A function that returns `c`.
+ * @param {string} input
+ */
+const c = (input = '') => {
+  return 'c' + input ? `-${input}` : ''
+}
+
+/**
+ * A function that returns `b`.
+ * @param {number} times
+ */
+const b = (times = 0) => {
+  return 'b' + times ? `-${times}` : ''
+}
+
+module.exports = S
+module.exports.c = c
+module.exports.b = b
+```
+
+<p align="center"><a href="#table-of-contents"><img src="/.documentary/section-breaks/5.svg?sanitize=true"></a></p>
 
 ## Copyright
 
-(c) [À La Mode][1] 2018
+<table>
+  <tr>
+    <th>
+      <a href="https://artd.eco">
+        <img src="https://raw.githubusercontent.com/wrote/wrote/master/images/artdeco.png" alt="Art Deco" />
+      </a>
+    </th>
+    <th>© <a href="https://artd.eco">Art Deco</a> for <a href="https://alamode.cc">À La Mode</a> 2019</th>
+    <th>
+      <a href="https://www.technation.sucks" title="Tech Nation Visa">
+        <img src="https://raw.githubusercontent.com/artdecoweb/www.technation.sucks/master/anim.gif"
+          alt="Tech Nation Visa" />
+      </a>
+    </th>
+    <th><a href="https://www.technation.sucks">Tech Nation Visa Sucks</a></th>
+  </tr>
+</table>
 
-[1]: https://alamode.cc
-
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/-1.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src="/.documentary/section-breaks/-1.svg?sanitize=true"></a></p>

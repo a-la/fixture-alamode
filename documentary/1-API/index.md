@@ -8,7 +8,7 @@ import erte, { c, b } from '@a-la/fixture-alamode'
 
 %~%
 
-```## erte
+```## erte => string
 ```
 
 Returns `erte`.
@@ -18,16 +18,24 @@ Returns `erte`.
 
 %~%
 
-```## c
+```## c => string
 ```
 
 Returns `c`.
 
 %~%
 
-```## b
+```## b => string
 ```
 
 Returns `b`.
+
+%~%
+
+## Transpiled Source Code
+
+This is how ÀLaMode transpiles the [source code](src/class.js):
+
+%EXAMPLE: build/class%
 
 %~%

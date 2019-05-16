@@ -1,8 +1,15 @@
-/**
- * A function that returns `erte`.
- */
-const erte = () => {
-  return 'erte'
+import Stream from 'stream'
+import { join } from 'stream'
+
+export default class S extends Stream {
+  /**
+   * Creates a new instance.
+   * @param {string} path
+   */
+  constructor(path) {
+    super()
+    console.log(join('hello', path))
+  }
 }
 
 /**
@@ -20,5 +27,3 @@ export const c = (input = '') => {
 export const b = (times = 0) => {
   return 'b' + times ? `-${times}` : ''
 }
-
-export default erte
