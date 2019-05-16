@@ -68,17 +68,22 @@ Returns `b`.
 This is how ÀLaMode transpiles the [source code](src/class.js):
 
 ```js
-const Stream = require('stream');
-const { join } = require('stream');
+const Stream = require('stream'); const {
+  Transform,
+} = Stream;
+const { join } = require('path');
 
-class S extends Stream {
+class S extends Transform {
   /**
    * Creates a new instance.
    * @param {string} path
+   * @param {Stream} [parent]
    */
-  constructor(path) {
+  constructor(path, parent) {
     super()
-    console.log(join('hello', path))
+    this.source = join('example', path)
+    if (parent instanceof Stream)
+      this.pipe(parent)
   }
 }
 

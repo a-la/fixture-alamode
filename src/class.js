@@ -1,14 +1,19 @@
-import Stream from 'stream'
+import Stream, {
+  Transform,
+} from 'stream'
 import { join } from 'path'
 
-export default class S extends Stream {
+export default class S extends Transform {
   /**
    * Creates a new instance.
    * @param {string} path
+   * @param {Stream} [parent]
    */
-  constructor(path) {
+  constructor(path, parent) {
     super()
-    console.log(join('hello', path))
+    this.source = join('example', path)
+    if (parent instanceof Stream)
+      this.pipe(parent)
   }
 }
 

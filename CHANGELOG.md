@@ -1,5 +1,9 @@
 ## 16 May 2019
 
+### [1.1.3](https://github.com/a-la/fixture-alamode/compare/v1.1.2...v1.1.3)
+
+- [fix] Import _Transform_ as well as _Stream_ in `class.js`.
+
 ### [1.1.2](https://github.com/a-la/fixture-alamode/compare/v1.1.1...v1.1.2)
 
 - [fix] Fix the class `path` import.
