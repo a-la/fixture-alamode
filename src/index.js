@@ -9,16 +9,16 @@ const erte = () => {
  * A function that returns `c`.
  * @param {string} input
  */
-export const c = (input = '') => {
-  return 'c' + input ? `-${input}` : ''
+export const c = (input) => {
+  return 'c' + (input ? `-${input}` : '')
 }
 
 /**
  * A function that returns `b`.
  * @param {number} times
  */
-export const b = (times = 0) => {
-  return 'b' + times ? `-${times}` : ''
+export const b = (times) => {
+  return 'b' + (times ? `-${times}` : '')
 }
 
 export default erte
